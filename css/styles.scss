@@ -4,6 +4,10 @@ body {
     font-family: $main-font-family;
 }
 
+button {
+    font-family: $title-font-family;
+}
+
 #title {
     background-color: $bg-color-1;
 
@@ -15,6 +19,7 @@ body {
     }
 
     button {
+        @extend button;
         margin-top: 20px;
         margin: 20px 15px auto auto;
     }
@@ -29,7 +34,6 @@ body {
 }
 
 .navbar-brand {
-    font-family: $main-font-family;
     font-size: 3rem;
 }
 
