@@ -207,7 +207,7 @@ button, #title button {
 }
 #pricing .container-fluid {
   padding: 0;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 @media (min-width: 992px) {
   #pricing {
@@ -237,7 +237,7 @@ button, #title button {
 }
 @media (min-width: 768px) {
   #cta .container-fluid {
-    padding: 60px 50px;
+    padding: 90px 50px;
     max-width: 700px;
   }
 }
