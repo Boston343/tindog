@@ -1,44 +1,99 @@
 @import "./variables";
 
+// ----------------------------------------------------------------------------------------------------------
+// General
 body {
     font-family: $main-font-family;
 }
 
 button {
-    font-family: $title-font-family;
+    // font-family: $title-font-family;
 }
 
+// ----------------------------------------------------------------------------------------------------------
+// Title
 #title {
     background-color: $bg-color-1;
+    // max-height: 1300px;
+    // overflow: hidden;
 
     h1 {
-        font-family: $title-font-family;
         font-weight: 900;
-        font-size: 3rem;
+        font-size: 3.5rem;
         line-height: 1.5;
     }
 
     button {
         @extend button;
         margin-top: 20px;
-        margin: 20px 15px auto auto;
+        // margin: 20px 15px auto auto;
+        margin: 5% 3% 5% 0;
     }
 }
+
+// ----------------------------------------------------------------------------------------------------------
+// Navigation  Bar
+
+.navbar {
+    padding-bottom: 4.5rem;
+    padding-top: 0;
+}
+
+.navbar-brand {
+    font-family: $title-font-family;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0 18px;
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// Hero Image
 
 .container-fluid {
     padding: 3% 15%;
 }
 
-.navbar {
-    padding-bottom: 70px;
+.title-img {
+    width: 60%;
+    transform: rotate(25deg);
 }
 
-.navbar-brand {
-    font-size: 3rem;
-}
+// ----------------------------------------------------------------------------------------------------------
+// Features
+#features {
+    i {
+        color: $feature-icon-color;
+        font-size: 3rem;
 
-.nav-item {
-    font-family: $title-font-family;
-    font-size: 1.3rem;
-    padding-left: 40px;
+        &:hover {
+            color: $bg-color-1;
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 16px;
+    }
+
+    p {
+        color: $feature-detail-color;
+    }
+
+    .row {
+        // padding: 80px 0;
+        padding-top: 80px;
+    }
+
+    .col {
+        align-items: center;
+        padding: 0 4% 70px 4%;
+        // padding: 5rem 2rem;
+        // padding-top: 100px;
+    }
 }
