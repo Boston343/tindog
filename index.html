@@ -65,8 +65,8 @@
             </nav>
 
             <!-- Title -->
-            <div class="row gy-4 hero-text">
-                <div class="col-lg-6 ">
+            <div class="row gy-4">
+                <div class="col-lg-6 text-lg-start">
                     <h1 class="text-white">Meet new and interesting dogs nearby.</h1>
                     <button type="button" class="btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i>
                         Download</button>
@@ -122,32 +122,35 @@
 
         <!-- Testimonials -->
 
-        <section id="testimonials" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000"
-            data-bs-pause="hover">
-            <div class="container-fluid">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.
-                        </h2>
-                        <img src="images/dog-img.jpg" alt="dog-profile">
-                        <em>Pebbles, New York</em>
+        <section id="testimonials">
+            <div class="testimonial-container">
+                <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000"
+                    data-bs-pause="hover">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the
+                                hottest Corgi on TinDog. Woof.</h2>
+                            <img src="images/dog-img.jpg" alt="dog-profile">
+                            <em>Pebbles, New York</em>
+                        </div>
+                        <div class="carousel-item">
+                            <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've
+                                found the love of their life. I think.</h2>
+                            <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+                            <em>Beverly, Illinois</em>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found
-                            the
-                            love of their life. I think.</h2>
-                        <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-                        <em>Beverly, Illinois</em>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonials" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </section>
 
@@ -170,7 +173,7 @@
         <section id="pricing">
 
             <div class="container-fluid">
-                <h2>A Plan for Every Dog's Needs</h2>
+                <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
                 <p>Simple and affordable price plans for your and your dog.</p>
 
                 <div class="row">
@@ -232,7 +235,8 @@
 
         <section id="cta">
             <div class="container-fluid">
-                <h3>Find the True Love of Your Dog's Life Today.</h3>
+                <!-- <h3>Find the True Love of Your Dog's Life Today.</h3> -->
+                <h1>Find the True Love of Your Dog's Life Today.</h1>
                 <button type="button" class="btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i>
                     Download</button>
                 <button type="button" class="btn btn-light btn-lg"><i class="fa-brands fa-google-play"></i>

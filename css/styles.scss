@@ -13,12 +13,14 @@
 
 body {
     font-family: $main-font-family;
+    text-align: center;
 }
 
 h1 {
     font-weight: 900;
     font-size: 2rem;
     line-height: 1.5;
+    color: white;
 
     @include media-breakpoint-up(xl) {
         font-size: 2.5rem;
@@ -33,24 +35,19 @@ h2 {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.5;
-
-    @include media-breakpoint-up(xl) {
-        font-size: 3rem;
-    }
 }
 
 h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-top: 16px;
+    margin: 0;
 }
 
 p {
-    color: $feature-detail-color;
+    color: $p-color;
 }
 
 button {
-    // font-family: $title-font-family;
     font-size: $btn-font-size;
 
     @include media-breakpoint-up(xl) {
@@ -71,6 +68,20 @@ button {
     }
 }
 
+.section-heading {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.5;
+
+    @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 3rem;
+    }
+}
+
 // ----------------------------------------------------------------------------------------------------------
 // Title
 
@@ -87,13 +98,10 @@ button {
 
     button {
         @extend button;
-        margin-top: 20px;
         margin: 5% 3% 5% 0;
     }
 
-    .hero-text {
-        text-align: center;
-
+    h1 {
         @include media-breakpoint-up(lg) {
             text-align: left;
         }
@@ -113,7 +121,7 @@ button {
 }
 
 .navbar-brand {
-    font-family: $title-font-family;
+    font-family: $brand-font-family;
     font-size: 2rem;
     font-weight: 400;
 
@@ -132,7 +140,6 @@ button {
 // Title Image
 
 .title-img {
-    // width: 60%;
     height: 520px;
     position: relative;
 
@@ -143,7 +150,6 @@ button {
 
 .title-img-container {
     max-height: 420px;
-    text-align: center;
 
     @include media-breakpoint-up(lg) {
         max-height: 350px;
@@ -157,6 +163,11 @@ button {
     background-color: white;
     position: relative;
     z-index: 1;
+
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
 
     i {
         color: $bg-color-2;
@@ -192,8 +203,6 @@ button {
 
 #testimonials {
     background-color: $bg-color-2;
-    padding: 7% 15%;
-    text-align: center;
     color: white;
 
     img {
@@ -203,8 +212,12 @@ button {
     }
 
     .container-fluid {
-        padding: 0;
-        max-width: 1000px;
+        padding: 7% 15%;
+        max-width: 800px;
+    }
+
+    .carousel-item {
+        padding: 0 15%;
     }
 
     @include media-breakpoint-up(xl) {
@@ -213,12 +226,27 @@ button {
     }
 }
 
+.testimonial-container {
+    padding: 7% 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.testimonial-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+    @include media-breakpoint-up(md) {
+        font-size: 2rem;
+    }
+}
+
 // ----------------------------------------------------------------------------------------------------------
 // Press
 
 #press {
     background-color: $bg-color-2;
-    text-align: center;
     padding-bottom: 3%;
 
     img {
@@ -228,7 +256,7 @@ button {
 
     .container-fluid {
         padding: 0;
-        max-width: 1600px;
+        max-width: 1400px;
     }
 }
 
@@ -237,7 +265,6 @@ button {
 
 #pricing {
     padding: 50px;
-    text-align: center;
 
     .col {
         padding: 3% 2%;
@@ -258,9 +285,8 @@ button {
 
 #cta {
     background-color: $bg-color-1;
-    text-align: center;
 
-    h3 {
+    h1 {
         margin: 0 auto 4%;
         color: white;
         font-weight: 900;
@@ -283,6 +309,7 @@ button {
     }
 
     button {
+        @extend button;
         margin: 25px 10px;
     }
 }
@@ -291,8 +318,6 @@ button {
 // Footer
 
 footer {
-    text-align: center;
-
     i {
         padding: 20px 10px;
     }
