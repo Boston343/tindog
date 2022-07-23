@@ -2,8 +2,27 @@
 
 // ----------------------------------------------------------------------------------------------------------
 // General
+
 body {
     font-family: $main-font-family;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 16px;
 }
 
 button {
@@ -12,21 +31,13 @@ button {
 
 // ----------------------------------------------------------------------------------------------------------
 // Title
+
 #title {
     background-color: $bg-color-1;
-    // max-height: 1300px;
-    // overflow: hidden;
-
-    h1 {
-        font-weight: 900;
-        font-size: 3.5rem;
-        line-height: 1.5;
-    }
 
     button {
         @extend button;
         margin-top: 20px;
-        // margin: 20px 15px auto auto;
         margin: 5% 3% 5% 0;
     }
 }
@@ -65,20 +76,16 @@ button {
 
 // ----------------------------------------------------------------------------------------------------------
 // Features
+
 #features {
+    // padding: 7% 15%;
     i {
-        color: $feature-icon-color;
-        font-size: 3rem;
+        color: $bg-color-2;
+        font-size: 4rem;
 
         &:hover {
             color: $bg-color-1;
         }
-    }
-
-    h3 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-top: 16px;
     }
 
     p {
@@ -86,14 +93,49 @@ button {
     }
 
     .row {
-        // padding: 80px 0;
         padding-top: 80px;
     }
 
     .col {
         align-items: center;
         padding: 0 4% 70px 4%;
-        // padding: 5rem 2rem;
-        // padding-top: 100px;
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// Testimonials
+
+#testimonials {
+    background-color: $bg-color-2;
+    padding: 7% 15%;
+    text-align: center;
+    color: white;
+
+    img {
+        width: 100px;
+        border-radius: 50%;
+        margin: 20px;
+    }
+
+    button {
+        // width: 20px;
+    }
+}
+
+.carousel-icon {
+    font-size: 5rem;
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// Press
+
+#press {
+    background-color: $bg-color-2;
+    text-align: center;
+    padding-bottom: 3%;
+
+    img {
+        width: 15%;
+        margin: 20px 20px 50px;
     }
 }
