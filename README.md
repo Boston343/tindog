@@ -17,4 +17,5 @@ Website can be viewed here: https://boston343.github.io/tindog/
     - including custom parameter passing (for bootstrap media queries)
   - Nesting
   - Separating code into multiple files
+- Z index in CSS
 - Font Awesome
